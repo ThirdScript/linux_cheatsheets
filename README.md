@@ -13,18 +13,14 @@ personal:  /home/sepehr/snap/cheat/common/.config/cheat/cheatsheets/personal
 ```
 go to either the community or personal folder and add this repository as your remote
 
-#### To change community repo
+#### To change personal repo
 ```sh
-cd /home/sepehr/snap/cheat/common/.config/cheat/cheatsheets/community
-git remote set-url origin git@github.com:ThirdScript/better_cheatsheets.git
+cd /home/sepehr/snap/cheat/common/.config/cheat/cheatsheets/
+rm -rf personal
+git clone git@github.com:ThirdScript/useful_cheatsheets.git
+mv useful_cheatsheets personal
 ```
 
-#### To change community repo
-```sh
-cd /home/sepehr/snap/cheat/common/.config/cheat/cheatsheets/personal
-git init .
-git remote set-url origin git@github.com:ThirdScript/better_cheatsheets.git
-```
 ### Format ###
 Cheatsheets are plain-text files that begin with an optional "front matter"
 header in YAML format. The header may be used to assign "tags" to a sheet, and
